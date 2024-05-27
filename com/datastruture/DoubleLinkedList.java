@@ -106,7 +106,6 @@ public class DoubleLinkedList<T> {
     }
 
     public void removeNumbersSmallerThan(T element){
-
         No<T> current = begin;
 
         if (current == null)
@@ -114,9 +113,8 @@ public class DoubleLinkedList<T> {
 
         while (current != null){
 
-            if (current.getElement() == element){
+            if (current.getElement() == element)
                 this.remove(current.getElement());
-            }
 
            current =  current.getNext();
         }
